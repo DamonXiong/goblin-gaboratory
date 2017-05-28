@@ -1,3 +1,8 @@
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="section__title">我的订阅</view>
 <scroll-view class="weui-panel" scroll-y="true">
   <view class="weui-panel__bd">
     <navigator wx:for-items="{{list}}" wx:key="{{item.id}}" url="../owner/index?owner={{item.owner}}&repo={{item.repo}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">

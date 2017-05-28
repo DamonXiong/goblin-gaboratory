@@ -1,9 +1,10 @@
-const Promise = require('../../../../util/bluebird.min');
-const github = require('../../../../util/github');
-
+const Promise = require('../../util/bluebird.min');
+const github = require('../../util/github');
+var app = getApp()
 Page({
   data: {
-    list: []
+    list: [],
+    userInfo: {}
   },
   totle: 0,
   count: 0,
@@ -18,6 +19,14 @@ Page({
     var list = github.getSubs();
     this.totle = list.length;
     this.count = 0;
+    var that = this;
+    app.getUserInfo(function (userInfo) {
+      console.log(userInfo);
+      //更新数据
+      that.setData({
+        userInfo: userInfo
+      })
+    })
 
     if (0 === this.totle){
       that.setData({

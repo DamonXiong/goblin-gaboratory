@@ -1,4 +1,4 @@
-@import "../../../common/index.wxss";
+@import "../common/index.wxss";
 .unsubscription-container{
     position: relative;
 }

@@ -1,12 +1,12 @@
 {
   "pages": [
-    "page/subscription/index",
-    "page/subscription/pages/owner/index",
-    "page/subscription/pages/issue/index",
-    "page/subscription/pages/add/index",
-    "page/subscription/pages/history/index",
-    "page/subscription/pages/find/index",
-    "page/subscription/pages/user/index"
+    "page/find/index",
+    "page/home/index",
+    "page/owner/index",
+    "page/issue/index",
+    "page/add/index",
+    "page/history/index",
+    "page/user/index"
   ],
   "tabBar": {
     "borderStyle": "white",
@@ -14,25 +14,25 @@
     "selectedColor": "#3cc51f",
     "list": [
       {
-        "pagePath": "page/subscription/index",
-        "text": "新消息",
-        "iconPath": "../image/icon_home.png",
-        "selectedIconPath": "../image/icon_home_HL.png"
-      },
-      {
-        "pagePath": "page/subscription/pages/history/index",
-        "text": "历史消息",
-        "iconPath": "../image/icon_history.png",
-        "selectedIconPath": "../image/icon_history_HL.png"
-      },
-      {
-        "pagePath": "page/subscription/pages/find/index",
+        "pagePath": "page/find/index",
         "text": "发现",
         "iconPath": "../image/icon_find.png",
         "selectedIconPath": "../image/icon_find_HL.png"
       },
       {
-        "pagePath": "page/subscription/pages/user/index",
+        "pagePath": "page/home/index",
+        "text": "新消息",
+        "iconPath": "../image/icon_home.png",
+        "selectedIconPath": "../image/icon_home_HL.png"
+      },
+      {
+        "pagePath": "page/history/index",
+        "text": "历史消息",
+        "iconPath": "../image/icon_history.png",
+        "selectedIconPath": "../image/icon_history_HL.png"
+      },
+      {
+        "pagePath": "page/user/index",
         "text": "我的",
         "iconPath": "../image/icon_user.png",
         "selectedIconPath": "../image/icon_user_HL.png"

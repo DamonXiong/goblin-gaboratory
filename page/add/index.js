@@ -1,6 +1,6 @@
-// const Promise = require('../../../../util/bluebird.min');
-const github = require('../../../../util/github');
-const WxParse = require('../../../../util/wxParse/wxParse.js')
+// const Promise = require('../../util/bluebird.min');
+const github = require('../../util/github');
+const WxParse = require('../../util/wxParse/wxParse.js')
 
 Page({
   data: {

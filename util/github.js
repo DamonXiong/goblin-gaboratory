@@ -95,8 +95,8 @@ module.exports = {
   getIssues: function (info) {
     let owner = info.owner;
     let user = storage.get(owner);
-    if (user && user.issues && user.lastupdate 
-    && (Date.parse(user.lastupdate) == Date.parse(new Date().toDateString()))) {
+    if (user && user.issues && user.lastupdate
+      && (Date.parse(user.lastupdate) == Date.parse(new Date().toDateString()))) {
       return new Promise(function (resolve, reject) {
         resolve(user.issues);
       });
@@ -160,5 +160,21 @@ module.exports = {
   },
   parse: function (uri) {
     return parse(uri);
+  },
+  getHots: function () {
+    let hots = storage.get('hots');
+    if (undefined === hots) {
+      hots = [{ 'owner': 'phodal', 'address': 'https://github.com/phodal/articles' }, { 'owner': 'fouber', 'address': 'https://github.com/fouber/blog' }];
+      storage.set('hots', hots);
+    }
+    return hots;
+  },
+  getHistorys: function () {
+    let hiss = storage.get('hiss');
+    if (undefined === hiss) {
+      hiss = []
+      storage.set('hiss', hiss);
+    }
+    return hiss;
   }
 };
